@@ -1,0 +1,278 @@
+/* Catpuccin Mocha Pastel */
+:root{
+    --base: #24273a;
+    --green: #a6e3a1;
+    --mauve: #eba0ac;
+    --text: #cdd6f4;
+    --lavender: #b4befe;
+    --surface: #313244;
+    --overlay: #6c7086;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    color: var(--text);
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #0f0f0f80;
+    backdrop-filter: blur(12px);
+    padding: 0 1.5rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+}
+nav li{
+    padding-left: 1.5rem;
+    font-weight: 600;
+}
+a {
+    text-decoration: none;
+    color: var(--text);
+}
+nav li a:hover {
+    color: var(--mauve);
+}
+nav a.active {
+    color: var(--mauve);
+    border-bottom: 1px solid var(--mauve);
+}
+header h1 span:first-child {
+    color: var(--mauve);
+}
+header h1 span:last-child {
+    color: var(--green);
+}
+/* Hero section */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: var(--mauve);
+}
+.hero.main h2 {
+    font-size: 4.5rem;
+    margin-bottom: 0.5rem;
+}
+.hero p {
+    font-size: 1.25rem;
+    max-width: 850px;
+    line-height: 1.6;
+}
+.buttons{
+    display: flex;
+    width: 20rem;
+    height: 5rem;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.buttons a {
+    display: block;
+    height: 2.2rem;
+    line-height: 2rem;
+    width: 8.5rem;
+    border-radius: 12px;
+    border: 1px solid var(--mauve);
+}
+/* Merits section | Index */
+.merits, .about, .team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+.merits h2, .team h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--surface);
+}
+.merits > div, .team > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.merits .card {
+    background: rgba(36, 39, 58, 0.4);
+    backdrop-filter: blur(8px);
+    width: 25%;
+    height: 8rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.merits .value {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--green);
+}
+.merits .infin {
+    font-size: 3.3rem;
+    line-height: 2.2rem;
+}
+.merits .text {
+    color: var(--text);
+    font-weight: 600;
+}
+/* Projects section for index */
+.featured-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+.featured-projects > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.featured-projects .card {
+    background: #f0f0f026;
+    backdrop-filter: blur(8px);
+    width: 42%;
+    height: 10rem;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+}
+.featured-projects h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+.featured-projects > p {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+}
+.featured-projects .card h3 {
+    font-size: 1.5rem;
+    color: var(--mauve);
+}
+.featured-projects > a {
+    font-size: 1.15rem;
+    text-decoration: underline;
+}
+.featured-projects > a:hover {
+    color: var(--green);
+    transition: color 0.3s ease-in-out;
+}
+/* Footer styling */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 3rem;
+}
+footer h3 {
+    font-size: 1.75rem;
+}
+footer h3 span:first-child {
+    color: var(--mauve);
+}
+footer h3 span:last-child {
+    color: var(--green);
+}
+footer p {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+}
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+footer ul a:hover {
+    color: var(--mauve);
+}
+footer h4 {
+    font-size: 1.25rem;
+    color: white;
+    margin-bottom: 0.5rem;
+}
+.team .card {
+    background: var(--green);
+    backdrop-filter: blur(8px);
+    width: 40%;
+    height: 20rem;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.card .body{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    color: var(--base);
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}
+.card h3{
+    font-size: 1.5rem;
+    color: var(--mauve);
+}
+.card .header {
+    background: var(--base);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    top: 0;
+    border-radius: 25px 25px 0 25px;
+}
+.header::after, .header::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: -40px;
+    right: 0;
+    background-color: var(--base);
+}
+.card .header::after {
+    background: var(--green);
+    border-radius: 0 25px 0 0;
+}
+.card .avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid var(--mauve);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}

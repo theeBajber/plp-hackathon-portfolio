@@ -1,0 +1,24 @@
+.trapezoid {
+  width: 100%;
+  height: 520px;
+}
+.trapezoid:nth-child(2){
+  clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+  background: var(--base);
+}
+.trapezoid:nth-child(3){
+  clip-path: polygon(0% 0%, 100% 10%, 100% 90%, 0% 100%);
+  margin-top: -55px;
+    background: linear-gradient(135deg, var(--green) 0%, var(--lavender) 100%);
+}
+.trapezoid:nth-child(4){
+  clip-path: polygon(0% 10%, 100% 0%, 100% 100%, 0% 100%);
+  margin-top: -55px;
+  background: var(--surface);
+  height: 450px;
+}
+footer {
+  background: var(--base);
+  height: 250px;
+  display: flex;
+}
