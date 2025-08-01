@@ -131,9 +131,11 @@ header h1 span:last-child {
 .buttons{
     display: flex;
     width: 20rem;
-    height: 5rem;
     align-items: center;
     justify-content: space-evenly;
+}
+.main .buttons {
+    height: 5rem;
 }
 .buttons a {
     display: block;
@@ -857,6 +859,7 @@ form button{
     align-items: baseline;
     height: 67%;
     padding: 1rem;
+    justify-content: space-evenly;
 }
 .projects .tech {
     display: flex;
@@ -876,7 +879,7 @@ form button{
 }
 .projects .stats {
     width: 100%;
-    height: 15rem;
+    height: 4rem;
     border-radius: 15px;
     display: flex;
     justify-content: space-between;
