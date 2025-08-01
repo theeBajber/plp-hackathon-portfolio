@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/trapezoids.css">
+    <link rel="stylesheet" href="./css/style.css">
     <meta name="description" content="A Co-ed portfolio for Katy and Faraj">
     <meta name="keywords" content="Portfolio, PLP, hackathon, Faraj, Katy">
     <meta name="author" content="Katy and Faraj">
@@ -13,17 +13,23 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" style="display:none;" />
         <nav>
             <a href="./"><h1><span>Katy</span> & <span>Faraj</span></h1></a>
+            <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
             <ul>
                 <li><a href="./about.html">About</a></li>
-                <li><a href="#projects.html">Projects</a></li>
-                <li><a href="#contact.html">Contact</a></li>
+                <li><a href="./projects.html">Projects</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <section class="trapezoid hero main">
-        <h2>
+        <h2 class="typewriter-gradient">
             Katy & Faraj
         </h2>
         <p>
@@ -39,11 +45,11 @@
         <h2>More than just code</h2>
         <div>
         <div class="card">
-            <div class="value">2</div>
+            <div class="value" data-animate="count2"></div>
             <div class="text">Creative Minds</div>
         </div>
         <div class="card">
-            <div class="value">100%</div>
+            <div class="value" data-animate="count100"></div>
             <div class="text">Commitment</div>
         </div>
         <div class="card">
