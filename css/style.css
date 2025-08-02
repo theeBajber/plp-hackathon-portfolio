@@ -22,192 +22,6 @@ body {
     background: var(--base);
     animation: var(--fade-in);
 }
-/* Responsive text adjustments for small devices */
-@media (max-width: 700px) {
-  html {
-    font-size: 15px;
-  }
-  .hero h1 {
-    font-size: 2rem;
-  }
-  .hero.main h2 {
-    font-size: 2.2rem;
-  }
-  .hero p {
-    font-size: 1rem;
-    max-width: 95vw;
-    line-height: 1.4;
-    margin-bottom: 0.7rem;
-    text-align: left;
-  }
-  .merits h2, .team h2, .contact h2 {
-    font-size: 1.5rem;
-  }
-  .merits .value {
-    font-size: 1.3rem;
-  }
-  .featured-projects .card h3,
-  .projects .card h3 {
-    font-size: 1.1rem;
-  }
-  .featured-projects > p,
-  .projects p {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 0.7rem;
-  }
-  .faqs h2, .invite h2, .featured-projects h2 {
-    font-size: 1.2rem;
-  }
-  .faqs p {
-    font-size: 0.95rem;
-    line-height: 1.4;
-    margin-bottom: 0.7rem;
-  }
-  footer h3 {
-    font-size: 1.1rem;
-  }
-  footer p, footer h4 {
-    font-size: 0.95rem;
-  }
-  .team .card h3 {
-    font-size: 1.1rem;
-  }
-  .contact > p {
-    font-size: 1rem;
-    max-width: 95vw;
-    line-height: 1.4;
-    margin-bottom: 0.7rem;
-  }
-  .projects .card, .featured-projects .card, .merits .card, .team .card {
-    width: 98vw;
-    min-width: 0;
-    max-width: 99vw;
-    margin: 0 auto 1rem auto;
-    padding: 0.5rem;
-    height: auto;
-  }
-  .projects > div, .featured-projects > div, .merits > div, .team > div {
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .projects .card .body, .featured-projects .card .body {
-    padding: 0.5rem;
-  }
-  .projects .stats {
-    flex-direction: column;
-    height: auto;
-    gap: 0.5rem;
-    padding: 0.5rem 0;
-  }
-  .projects .tech {
-    flex-wrap: wrap;
-    gap: 0.3rem;
-  }
-  .buttons {
-    width: 100%;
-    flex-direction: column;
-    gap: 0.5rem;
-  }
-  .buttons a, a.button {
-    width: 100%;
-    min-width: 0;
-    font-size: 1rem;
-    padding: 0.4rem 0;
-  }
-  .sitemap ul {
-    flex-direction: column;
-    gap: 0.3rem;
-    align-items: flex-start;
-  }
-  .sitemap h4 {
-    font-size: 1rem;
-  }
-  footer {
-    padding: 1rem 0.5rem;
-  }
-  .card .header, .card .body, .card .content {
-    position: static;
-    width: 100%;
-    padding: 0.5rem;
-  }
-  .card .avatar {
-    width: 60px;
-    height: 60px;
-    font-size: 2rem;
-  }
-  .card .links img {
-    width: 0.8rem;
-  }
-  .card .info {
-    font-size: 0.8rem;
-  }
-}
-
-
-/* Responsive adjustments for devices wider than 320px */
-@media (min-width: 321px) and (max-width: 900px) {
-  html {
-    font-size: 16px;
-  }
-  .hero h1 {
-    font-size: 2.4rem;
-  }
-  .hero.main h2 {
-    font-size: 2.8rem;
-  }
-  .hero p {
-    font-size: 1.1rem;
-    max-width: 98vw;
-  }
-  .merits h2, .team h2, .contact h2 {
-    font-size: 2rem;
-  }
-  .merits .value {
-    font-size: 1.7rem;
-  }
-  .featured-projects .card h3,
-  .projects .card h3 {
-    font-size: 1.3rem;
-  }
-  .featured-projects > p,
-  .projects p {
-    font-size: 1.1rem;
-  }
-  .faqs h2, .invite h2, .featured-projects h2 {
-    font-size: 1.5rem;
-  }
-  .faqs p {
-    font-size: 1.05rem;
-  }
-  footer h3 {
-    font-size: 1.3rem;
-  }
-  footer p, footer h4 {
-    font-size: 1.1rem;
-  }
-  .team .card h3 {
-    font-size: 1.3rem;
-  }
-  .contact > p {
-    font-size: 1.1rem;
-  }
-  .featured-projects .card,
-  .projects .card {
-    width: 90vw;
-    min-width: 260px;
-    max-width: 98vw;
-    margin: 0 auto 1.5rem auto;
-  }
-  .merits .card,
-  .team .card {
-    width: 90vw;
-    min-width: 260px;
-    max-width: 98vw;
-    margin: 0 auto 1.5rem auto;
-  }
-}
 nav {
     display: flex;
     justify-content: space-between;
@@ -478,7 +292,6 @@ section#merits {
   90% { content: "90%"; }
   100% { content: "100%"; }
 }
-
 .merits .infin {
     font-size: 3.3rem;
     line-height: 2.2rem;
@@ -508,7 +321,6 @@ section#merits {
 }
 .featured-projects .card:nth-child(1) { animation-delay: 0.2s; }
 .featured-projects .card:nth-child(2) { animation-delay: 0.4s; }
-
 .featured-projects > p {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -533,7 +345,6 @@ footer {
     padding: 0 3rem;
     animation: fadeIn 1.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
-
 /* Modern Animations */
 @keyframes fadeIn {
     0% { opacity: 0; }
@@ -552,7 +363,6 @@ footer {
     0% { opacity: 0; transform: translateY(40px) scale(0.95); }
     100% { opacity: 1; transform: translateY(0) scale(1); }
 }
-
 footer h3 {
     font-size: 1.75rem;
 }
@@ -577,7 +387,7 @@ footer ul a:hover {
 }
 footer h4 {
     font-size: 1.25rem;
-    color: white;
+    color: var(--lavender);
     margin-bottom: 0.5rem;
 }
 .team .card {
@@ -680,7 +490,8 @@ footer h4 {
     width: 100%;
 }
 section.trapezoid.contact{
-    height: 800px;
+    min-height: 700px !important;
+    height: auto !important;
 }
 
 .card .controls{
@@ -882,31 +693,26 @@ form button{
   height: auto !important;
   margin-top: -85px !important;
 }
-
 .faqs h2, .invite h2, .featured-projects h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: var(--green);
 }
-
 .faqs p {
   margin-bottom: 2rem;
   color: #a6adc8;
 }
-
 .faq-container {
   column-count: 1;
   column-gap: 2rem;
   max-width: 1000px;
   margin: 0 auto;
 }
-
 @media (min-width: 768px) {
   .faq-container {
     column-count: 2; /* Split into two vertical columns */
   }
 }
-
 .faq-container details {
   display: inline-block;
   width: 100%;
@@ -921,7 +727,6 @@ form button{
   transition: all 0.4s ease;
   overflow: hidden;
 }
-
 .faq-container summary {
   list-style: none;
   position: relative;
@@ -930,7 +735,6 @@ form button{
   transition: color 0.3s ease;
   color: var(--lavender);
 }
-
 .faq-container summary::after {
   content: '+';
   position: absolute;
@@ -979,7 +783,6 @@ form button{
     gap: 0.2rem;
     color: var(--text);
 }
-
 .projects .card .header{
     height: 33%;
     justify-content: space-between;
@@ -1220,7 +1023,6 @@ input#nav-toggle {
         transform: translateY(-7px) rotate(-45deg);
     }
 }
-
 .nav-toggle .bar {
     width: 26px;
     height: 3px;
@@ -1279,5 +1081,169 @@ input#nav-toggle {
         justify-content: center;
         align-items: baseline;
         gap: 1rem;
+    }
+}
+@media screen  and (max-width: 600px){
+    .merits .card{
+        width: 90vw;
+        min-width: 260px;
+        max-width: 98vw;
+        margin: 0 auto 1.5rem auto;
+    }
+    section.merits#merits {
+        height: 600px;
+    }
+    .featured-projects .card {
+        width: 90vw;
+        min-width: 260px;
+        max-width: 98vw;
+        margin: 0 auto 1.5rem auto;
+    }
+    section.trapezoid.featured-projects {
+        height: 600px !important;
+        padding-top: 20px;
+    }
+}
+@media (max-width: 1024px) {
+  .contact > div {
+    flex-direction: column;
+    align-items: stretch;
+    align-content: center;
+  }
+  html {
+    font-size: 14px;
+  }
+  .hero p {
+    padding: 0 1rem;
+  }
+  .contact form {
+    width: 90%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+  }
+  .trapezoid.contact {
+    height: auto;
+    align-content: center;
+    padding: 7rem 1rem;
+    padding-bottom: 9rem;
+    margin-top: -110px !important;
+  }
+  #cards {
+    width: 100%;
+    align-items: center;
+  }
+  .contact .card {
+    width: 90%;
+    max-width: 400px;
+  }
+  .faqs {
+    padding: 3rem 1rem;
+    padding-top: 6.5rem;
+    margin-top: -125px !important;
+  }
+}
+@media screen and (max-width: 900px) {
+    .projects > div {
+        flex-direction: column;
+    }
+    .projects .card {
+        width: 90vw;
+        min-width: 260px;
+        max-width: 98vw;
+        margin: 0 auto 1.5rem auto;
+    }
+    section.projects {
+        height: auto !important;
+        max-height: 1500px;
+        padding: 10rem 1rem;
+    }
+    section.trapezoid:nth-child(4).invite {
+        margin-top: -140px !important;
+        height: 280px;
+    }
+
+    .projects > p {
+        margin: 0 0 1.5rem 0;
+    }
+}
+@media screen and (max-width: 700px){
+    .team .card {
+        width: 85%;
+        margin: 0;
+    }
+    #team {
+        height: auto !important;
+        padding: 8rem 1rem;
+    }
+    .team > div {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+    section.trapezoid#edu {
+        margin-top: -105px;
+    }
+    .contact div.card .links {
+        width: 68%;
+    }
+    .hero.main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20rem 1rem;
+    }
+    .hero.main img {
+        width: 40%;
+    }
+    .hero.main h2 {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .hero.main > div {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero p {
+        text-align: center;
+    }
+    .hero.main p {
+        max-width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 450px) {
+    .edu .timeline {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        align-items: center;
+        gap:8px;
+        height: auto;
+    }
+    section.trapezoid#edu {
+        height: 540px;
+    }
+    .timeline h3 {
+        position: static;
+        text-align: center;
+        transform: none;
+    }
+    .timeline .dot {
+        display: none;
+    }
+
+    .edu .line {
+        display: none;
+    }
+
+    .timeline-item {
+        position: static;
+        width: 100%;
+        max-width: 300px;
+        background: var(--base);
+        border-radius: 12px;
+        padding: 1rem;
     }
 }
