@@ -9,9 +9,16 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" style="display:none;" />
         <nav>
             <a href="./"><h1><span>Katy</span> & <span>Faraj</span></h1></a>
+            <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
             <ul>
+                <li><a" href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a class="active" href="./projects.html">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
@@ -102,7 +109,7 @@
                     <p>A stylish, hand-coded portfolio showcasing our projects, team, and creativity — built with just HTML and CSS for PLP hackathon.</p>
                     <div class="tech">
                         <div>HTML5</div>
-                        <div>JavaScript</div>
+                        <div>CSS3</div>
                     </div>
                     <div class="stats">
                         <div>
@@ -125,12 +132,12 @@
                 </div>
             </div>
         </div>
-        <p>More coming soon. Stay tuned!</p>
+        <p>More coming soon... Stay tuned!</p>
     </section>
     <section class="trapezoid invite">
         <h2>Ready to Collaborate?</h2>
         <p>We're always excited to work on new challenges and innovative projects. Let's build something amazing together!</p>
-        <a href="./contact.html">Start a conversation &rarr;</a>
+        <a class="button" href="./contact.html">Start a conversation &rarr;</a>
     </section>
     <footer>
         <div>

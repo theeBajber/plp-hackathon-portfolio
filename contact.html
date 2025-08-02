@@ -9,9 +9,16 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" style="display:none;" />
         <nav>
             <a href="./"><h1><span>Katy</span> & <span>Faraj</span></h1></a>
+            <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
             <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="./about.html">About</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a class="active" href="./contact.html">Contact</a></li>
@@ -152,7 +159,7 @@
         <div class="faq-container">
             <details>
                 <summary>How can I contact you directly?</summary>
-                <p>You can reach us via the contact form at the bottom of this page. We usually reply within 24 hours.</p>
+                <p>You can reach us via the contact form at the top. We usually reply within 24 hours.</p>
             </details>
             <details>
                 <summary>Do you accept freelance or collaboration requests?</summary>
@@ -160,7 +167,7 @@
             </details>
             <details>
                 <summary>Is your contact form secure?</summary>
-                <p>Yes. We use a secure third-party handler like Formspree or Basin to protect your information.</p>
+                <p>Yes. We use a secure third-party handler like Formspree or to protect your information.</p>
             </details>
             <details>
                 <summary>Can I attach files or resumes in the form?</summary>

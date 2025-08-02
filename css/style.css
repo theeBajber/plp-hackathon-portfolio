@@ -22,6 +22,192 @@ body {
     background: var(--base);
     animation: var(--fade-in);
 }
+/* Responsive text adjustments for small devices */
+@media (max-width: 700px) {
+  html {
+    font-size: 15px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .hero.main h2 {
+    font-size: 2.2rem;
+  }
+  .hero p {
+    font-size: 1rem;
+    max-width: 95vw;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+    text-align: left;
+  }
+  .merits h2, .team h2, .contact h2 {
+    font-size: 1.5rem;
+  }
+  .merits .value {
+    font-size: 1.3rem;
+  }
+  .featured-projects .card h3,
+  .projects .card h3 {
+    font-size: 1.1rem;
+  }
+  .featured-projects > p,
+  .projects p {
+    font-size: 1rem;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+  }
+  .faqs h2, .invite h2, .featured-projects h2 {
+    font-size: 1.2rem;
+  }
+  .faqs p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+  }
+  footer h3 {
+    font-size: 1.1rem;
+  }
+  footer p, footer h4 {
+    font-size: 0.95rem;
+  }
+  .team .card h3 {
+    font-size: 1.1rem;
+  }
+  .contact > p {
+    font-size: 1rem;
+    max-width: 95vw;
+    line-height: 1.4;
+    margin-bottom: 0.7rem;
+  }
+  .projects .card, .featured-projects .card, .merits .card, .team .card {
+    width: 98vw;
+    min-width: 0;
+    max-width: 99vw;
+    margin: 0 auto 1rem auto;
+    padding: 0.5rem;
+    height: auto;
+  }
+  .projects > div, .featured-projects > div, .merits > div, .team > div {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .projects .card .body, .featured-projects .card .body {
+    padding: 0.5rem;
+  }
+  .projects .stats {
+    flex-direction: column;
+    height: auto;
+    gap: 0.5rem;
+    padding: 0.5rem 0;
+  }
+  .projects .tech {
+    flex-wrap: wrap;
+    gap: 0.3rem;
+  }
+  .buttons {
+    width: 100%;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .buttons a, a.button {
+    width: 100%;
+    min-width: 0;
+    font-size: 1rem;
+    padding: 0.4rem 0;
+  }
+  .sitemap ul {
+    flex-direction: column;
+    gap: 0.3rem;
+    align-items: flex-start;
+  }
+  .sitemap h4 {
+    font-size: 1rem;
+  }
+  footer {
+    padding: 1rem 0.5rem;
+  }
+  .card .header, .card .body, .card .content {
+    position: static;
+    width: 100%;
+    padding: 0.5rem;
+  }
+  .card .avatar {
+    width: 60px;
+    height: 60px;
+    font-size: 2rem;
+  }
+  .card .links img {
+    width: 0.8rem;
+  }
+  .card .info {
+    font-size: 0.8rem;
+  }
+}
+
+
+/* Responsive adjustments for devices wider than 320px */
+@media (min-width: 321px) and (max-width: 900px) {
+  html {
+    font-size: 16px;
+  }
+  .hero h1 {
+    font-size: 2.4rem;
+  }
+  .hero.main h2 {
+    font-size: 2.8rem;
+  }
+  .hero p {
+    font-size: 1.1rem;
+    max-width: 98vw;
+  }
+  .merits h2, .team h2, .contact h2 {
+    font-size: 2rem;
+  }
+  .merits .value {
+    font-size: 1.7rem;
+  }
+  .featured-projects .card h3,
+  .projects .card h3 {
+    font-size: 1.3rem;
+  }
+  .featured-projects > p,
+  .projects p {
+    font-size: 1.1rem;
+  }
+  .faqs h2, .invite h2, .featured-projects h2 {
+    font-size: 1.5rem;
+  }
+  .faqs p {
+    font-size: 1.05rem;
+  }
+  footer h3 {
+    font-size: 1.3rem;
+  }
+  footer p, footer h4 {
+    font-size: 1.1rem;
+  }
+  .team .card h3 {
+    font-size: 1.3rem;
+  }
+  .contact > p {
+    font-size: 1.1rem;
+  }
+  .featured-projects .card,
+  .projects .card {
+    width: 90vw;
+    min-width: 260px;
+    max-width: 98vw;
+    margin: 0 auto 1.5rem auto;
+  }
+  .merits .card,
+  .team .card {
+    width: 90vw;
+    min-width: 260px;
+    max-width: 98vw;
+    margin: 0 auto 1.5rem auto;
+  }
+}
 nav {
     display: flex;
     justify-content: space-between;
@@ -96,9 +282,26 @@ a {
 nav li a:hover {
     color: var(--mauve);
 }
-nav a.active {
+nav ul li a.active {
     color: var(--mauve);
-    border-bottom: 1px solid var(--mauve);
+}
+nav ul li a {
+    position: relative;
+    padding: 0.5rem 0;
+    color: var(--text);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+nav ul li a.active::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100%;
+    height: 3px;
+    background-color: var(--mauve);
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
 }
 header h1 span:first-child {
     color: var(--mauve);
@@ -114,17 +317,24 @@ header h1 span:last-child {
 }
 .hero.main {
     height: 500px;
+    flex-direction: row;
     animation: var(--fade-in);
+}
+.hero.main img {
+    width: 30%;
 }
 .hero.main h2 {
     font-size: 4.5rem;
+    width: fit-content;
     margin-bottom: 0.5rem;
     animation: var(--pop);
 }
 .hero p {
+    color: var(--text);
     font-size: 1.25rem;
     max-width: 850px;
     line-height: 1.6;
+    text-align: left;
     opacity: 0;
     animation: fadeIn 1.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
@@ -137,7 +347,7 @@ header h1 span:last-child {
 .main .buttons {
     height: 5rem;
 }
-.buttons a {
+.buttons a, a.button, .featured-projects > a{
     display: block;
     height: 2.2rem;
     line-height: 2rem;
@@ -149,14 +359,10 @@ header h1 span:last-child {
     transform: scale(1);
     animation: popIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
-.buttons a:hover {
+.buttons a:hover, a.button:hover,.featured-projects > a:hover {
     background: var(--mauve);
     transform: scale(1.07) rotate(-2deg);
     box-shadow: 0 8px 24px 0 #eba0ac33;
-}
-
-.buttons a:hover {
-    background: var(--mauve);
 }
 .buttons a:last-child {
     background: transparent;
@@ -165,10 +371,6 @@ header h1 span:last-child {
     position:relative;
     overflow: hidden;
 }
-/* .buttons a:last-child:hover {
-    background: #24273a40;;
-    color: var(--text);
-} */
 .buttons a:last-child::before {
     content: '';
     position: absolute;
@@ -188,7 +390,7 @@ header h1 span:last-child {
     font-size: 2.5rem;
     color: var(--surface);
 }
-section.merits {
+section#merits {
     height: 400px;
 }
 .merits > div, .team > div {
@@ -306,10 +508,7 @@ section.merits {
 }
 .featured-projects .card:nth-child(1) { animation-delay: 0.2s; }
 .featured-projects .card:nth-child(2) { animation-delay: 0.4s; }
-.featured-projects h2 {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-}
+
 .featured-projects > p {
     font-size: 1.25rem;
     margin-bottom: 1.5rem;
@@ -318,13 +517,13 @@ section.merits {
     font-size: 1.5rem;
     color: var(--mauve);
 }
-.featured-projects > a , .invite > a{
+.featured-projects > a,
+.invite > a {
+    margin-top: 1rem;
     font-size: 1.15rem;
-    text-decoration: underline;
-}
-.featured-projects > a:hover, .invite > a:hover {
-    color: var(--green);
-    transition: color 0.3s ease-in-out;
+    padding: 0.5rem;
+    width: fit-content;
+    line-height: 1.15rem;
 }
 /* Footer styling */
 footer {
@@ -334,27 +533,26 @@ footer {
     padding: 0 3rem;
     animation: fadeIn 1.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
 }
+
 /* Modern Animations */
 @keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+    0% { opacity: 0; }
+    100% { opacity: 1; }
 }
-
 @keyframes slideUp {
-  0% { transform: translateY(60px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 1; }
+    0% { transform: translateY(60px); opacity: 0; }
+    100% { transform: translateY(0); opacity: 1; }
 }
-
 @keyframes popIn {
-  0% { transform: scale(0.8); opacity: 0; }
-  80% { transform: scale(1.05); opacity: 1; }
-  100% { transform: scale(1); opacity: 1; }
+    0% { transform: scale(0.8); opacity: 0; }
+    80% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(40px) scale(0.95); }
+    100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
-@keyframes fadeInUp {
-  0% { opacity: 0; transform: translateY(40px) scale(0.95); }
-  100% { opacity: 1; transform: translateY(0) scale(1); }
-}
 footer h3 {
     font-size: 1.75rem;
 }
@@ -386,7 +584,7 @@ footer h4 {
     background: #ffffff33;
     backdrop-filter: blur(8px);
     width: 40%;
-    height: 20rem;
+    height: 26rem;
     border-radius: 25px;
     display: flex;
     flex-direction: column;
@@ -406,15 +604,25 @@ footer h4 {
     bottom: 0;
     padding: 0 1rem;
 }
+#team {
+    height: 650px;
+}
 .team .card h3{
     font-size: 1.5rem;
     color: var(--mauve);
+}
+.team .card.faraj h3{
+    color: var(--green) !important;
+}
+.team .card .header{
+    flex-direction: column;
+    justify-content: space-evenly;
+
 }
 .card .header {
     background: var(--base);
     display: flex;
     align-items: center;
-    justify-content: center;
     width: 100%;
     height: 40%;
     position: absolute;
@@ -451,38 +659,11 @@ footer h4 {
 .faraj .avatar {
     border: 2px solid var(--green);
 }
-.faraj h3{
-    color: var(--green);
-}
 .team .card .badges img{
     border-radius: 5px;
 }
-.values > div{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-}
-.values h2, .faqs h2, .invite h2{
-    color: var(--green);
-    font-size: 2rem;
-}
-.values .card{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 20rem;
-    height: 10rem;
-    gap: 0.2rem;
-}
-.values{
-    gap: 1.5rem;
-    height: 350px;
-}
-.values .emoji {
-    font-size: 2.5rem;
+.team a.button{
+    width: 50%;
 }
 #cards {
     display: flex;
@@ -702,10 +883,10 @@ form button{
   margin-top: -85px !important;
 }
 
-.faqs h2 {
+.faqs h2, .invite h2, .featured-projects h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
-  color: #f5e0dc;
+  color: var(--green);
 }
 
 .faqs p {
@@ -877,6 +1058,12 @@ form button{
     color: var(--surface);
     transition: all 0.3s ease-in-out;
 }
+.projects p {
+    font-size: 1.2rem;
+    color: var(--base);
+    font-weight: 600;
+    margin-top: 1rem;
+}
 .projects .stats {
     width: 100%;
     height: 4rem;
@@ -898,6 +1085,71 @@ form button{
 }
 .projects .buttons {
     width: 100%;
+}
+section#edu {
+    margin-top: -65px;
+}
+.edu h2{
+    color: var(--lavender);
+    font-size: 2rem;
+}
+.edu .timeline{
+    width: 85%;
+    height: 9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+}
+.timeline h3 {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--green);
+}
+.timeline h4{
+    color: var(--lavender);
+}
+.timeline.katy h3 {
+    color: var(--mauve);
+}
+.timeline.katy .line {
+    background: var(--mauve);
+}
+.timeline.katy .dot {
+    border: 2px solid var(--mauve);
+}
+.timeline-item{
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 42%;
+}
+.timeline-item:first-child {
+    left: 5%;
+}
+.timeline-item:last-child {
+    right: 1%;
+}
+.edu .line {
+    position: absolute;
+    width: 100%;
+    height: 0.5rem;
+    border-radius: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--green);
+}
+.edu .dot {
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--base);
+    border: 2px solid var(--green);
 }
 @keyframes float {
     0%, 100% { transform: translateY(0px); }
@@ -1019,5 +1271,13 @@ input#nav-toggle {
         padding: 1rem 0;
         font-size: 1.2rem;
         border-bottom: 1px solid var(--surface);
+    }
+}
+@media screen and (max-width: 700px) {
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: baseline;
+        gap: 1rem;
     }
 }

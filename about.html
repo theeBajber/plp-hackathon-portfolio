@@ -10,9 +10,16 @@
 </head>
 <body>
     <header>
+        <input type="checkbox" id="nav-toggle" style="display:none;" />
         <nav>
             <a href="./"><h1><span>Katy</span> & <span>Faraj</span></h1></a>
+            <label for="nav-toggle" class="nav-toggle" aria-label="Open navigation menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </label>
             <ul>
+                <li><a href="./index.html">Home</a></li>
                 <li><a class="active" href="./about.html">About</a></li>
                 <li><a href="./projects.html">Projects</a></li>
                 <li><a href="./contact.html">Contact</a></li>
@@ -23,58 +30,83 @@
         <h1>About Our Team</h1>
         <p>Two passionate innovators united by a shared vision for transformative technology</p>
     </section>
-    <section class="trapezoid team">
+    <section class="trapezoid team" id="team">
         <h2>Meet the team</h2>
         <div>
             <div class="card katy">
                 <div class="header">
                     <img class="avatar" src="./images/katy.jpeg" alt="Katy Safari">
+                    <h3>Katy Safari</h3>
                 </div>
                 <div class="body">
-                    <h3>Katy Safari</h3>
                     <h4>Front-end & Data Dev</h4>
                     <p>Creative frontend developer with an eye for design and a curiosity for data. Combines elegant interfaces with data-driven thinking to build smart and engaging applications.</p>
-                    <p>Interests: UI/UX, Open source Contribution</p>
                     <div class="badges">
                         <img src="https://img.shields.io/badge/Tailwind-1e1e2e?style=for-the-badge&logo=tailwindcss&logoColor=94e2d5" alt="Tailwind CSS badge" />
                         <img src="https://img.shields.io/badge/React-1e1e2e?style=for-the-badge&logo=react&logoColor=89b4fa" alt="React badge" />
                     </div>
+                    <p><strong>Interests:</strong> UI/UX, Open source Contribution</p>
+                    <a class="button" href="./docs/Katy_Resume.docx">Resume</a>
                 </div>
             </div>
             <div class="card faraj">
                 <div class="header">
                     <img class="avatar" src="./images/faraj.jpeg" alt="Faraj Salim">
+                    <h3>Faraj Salim</h3>
                 </div>
                 <div class="body">
-                    <h3>Faraj Salim</h3>
                     <h4>Full-stack developer & AI enthusiast</h4>
                     <p>Detail-oriented developer passionate about building intuitive user interfaces and intelligent backend systems. Loves blending creativity with code to solve real-world problems.</p>
-                    <p>Interests: API Design, Web Animations</p>
                     <div class="badges">
                         <img src="https://img.shields.io/badge/Next.js-1e1e2e?style=for-the-badge&logo=nextdotjs&logoColor=cba6f7" alt="Next.js badge" />
                         <img src="https://img.shields.io/badge/Python-1e1e2e?style=for-the-badge&logo=python&logoColor=f2cdcd" alt="Python badge" />
                     </div>
+                    <p><strong>Interests:</strong> API Design, Web Animations</p>
+                    <a class="button" href="./docs/Faraj_Resume.docx">Resume</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="trapezoid values">
-        <h2>Our values</h2>
-        <div>
-            <div class="card">
-                <div class="emoji">🚀</div>
-                <h3>Innovation</h3>
-                <p>Pushing boundaries and exploring new possibilities in every project</p>
+    <section class="trapezoid edu" id="edu">
+        <h2>Education</h2>
+        <div class="timeline katy">
+            <h3>Katy Safari</h3>
+            <div class="line"></div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <h4>BSc. Computer Science</h4>
+                    <span>Pwani University</span><br>
+                    <small>Sep 2023 – Present</small>
+                </div>
             </div>
-            <div class="card">
-                <div class="emoji">🤝</div>
-                <h3>Collaboration</h3>
-                <p>Leveraging diverse perspectives to create better solutions together</p>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <h4>Software Engineering</h4>
+                    <span>PLP Africa</span><br>
+                    <small>July 2025 – Present</small>
+                </div>
             </div>
-            <div class="card">
-                <div class="emoji">💡</div>
-                <h3>Impact</h3>
-                <p>Building technology that makes a meaningful difference in people's lives</p>
+        </div>
+        <div class="timeline faraj">
+            <h3>Faraj Salim</h3>
+            <div class="line"></div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <h4>BSc. Computer Science</h4>
+                    <span>Mount Kenya University</span><br>
+                    <small>Jan 2024 – Present</small>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <span class="dot"></span>
+                <div class="content">
+                    <h4>Software Engineering</h4>
+                    <span>PLP Africa</span><br>
+                    <small>July 2025 – Present</small>
+                </div>
             </div>
         </div>
     </section>
