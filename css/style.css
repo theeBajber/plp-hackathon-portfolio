@@ -624,6 +624,12 @@ section.trapezoid.contact{
 .card.katy .links div{
     background: var(--mauve);
 }
+.contact .links span:hover{
+    color: var(--green);
+}
+.contact .katy .links span:hover{
+    color: var(--mauve);
+}
 .contact form {
     display: flex;
     flex-direction: column;

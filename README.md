@@ -8,7 +8,7 @@ A collaborative, fully responsive, framework-free developer portfolio crafted by
 - **Visual Style:** Clean, soft shadows, rounded corners, card-style layout
 - **Dark Mode:** Default and only mode
 - **Typography:** System fonts for simplicity and speed
-- **Layout:** Desktop-first, fully responsive via CSS media queries
+- **Layout:** Desktop-first, fully responsive upto 320px screens via CSS media queries
 
 ---
 
