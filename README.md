@@ -9,6 +9,7 @@ A collaborative, fully responsive, framework-free developer portfolio crafted by
 - **Dark Mode:** Default and only mode
 - **Typography:** System fonts for simplicity and speed
 - **Layout:** Desktop-first, fully responsive upto 320px screens via CSS media queries
+- **Hosting** Used vercel. hosted at knf-portfolio.vercel.app
 
 ---
 
